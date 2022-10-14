@@ -80,7 +80,7 @@ export default {
         this.checkReg()
         this.$store.dispatch('getChurches')
       } else {
-        // not signed in
+        console.log('not logged in')
       }
     })
     auth.signInAnonymously().catch((e) => {
